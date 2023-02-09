@@ -21,7 +21,7 @@ header {
     height: 100vh;
 }
 
-.btn-mobilie{ 
+.btn-mobilie {
     visibility: hidden;
 }
 
@@ -64,7 +64,7 @@ nav {
 section#introducao {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
 
 .item {
@@ -105,7 +105,7 @@ section#introducao {
     text-fill-color: transparent;
     border-left: 5px solid var(--corPrincipal);
     padding-left: 5px;
-} 
+}
 
 .item button {
     font-size: 1.1rem;
@@ -120,8 +120,8 @@ section#introducao {
     margin-top: 5rem;
 }
 
-.item button:hover{
-    animation: hover 1020ms infinite; 
+.item button:hover {
+    animation: hover 1020ms infinite;
 }
 
 .item button img {
@@ -131,7 +131,7 @@ section#introducao {
     width: 32px;
 }
 
-main{
+main {
     margin: 0 auto;
     margin-top: 5rem;
     max-width: 1440px;
@@ -139,7 +139,7 @@ main{
     padding: 0px 1rem;
 }
 
-section#content{
+section#content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -148,12 +148,12 @@ section#content{
     gap: 2rem;
 }
 
-article{
+article {
     width: 300px;
-    height: 250px; 
+    height: 250px;
 }
 
-#icon{ 
+#icon {
     height: 75px;
     display: flex;
     align-items: center;
@@ -161,7 +161,7 @@ article{
     color: var(--corPrincipal);
 }
 
-#texto{
+#texto {
     padding: 1rem;
 }
 
@@ -186,14 +186,14 @@ article{
     section#introducao {
         display: block;
     }
-    
+
     .item {
         margin-top: 3.2rem;
         width: 100%;
         float: left;
         padding: 1rem;
     }
-    
+
     .item:last-child {
         display: flex;
         justify-content: end;
@@ -210,9 +210,10 @@ article{
         border-radius: 12px;
         box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
         border-radius: 12px;
-        cursor: pointer; 
+        cursor: pointer;
         position: relative;
     }
+
     .menu a {
         color: var(--corPrincipal);
         text-decoration: none;
@@ -220,38 +221,138 @@ article{
         font-weight: bold;
         font-size: 2rem;
     }
-    
 
-.logo img {
-    width: 5.5rem;
+
+    .logo img {
+        width: 5.5rem;
+    }
+
 }
-    
-  }
 
-@keyframes hover{
-    0%{
-        box-shadow: -4px -4px 10px #ff7b0071, 4px 4px 10px #ff7b0075, 1px 1px 4px rgba(0, 0, 0, 0.25); 
+@keyframes hover {
+    0% {
+        box-shadow: -4px -4px 10px #ff7b0071, 4px 4px 10px #ff7b0075, 1px 1px 4px rgba(0, 0, 0, 0.25);
     }
 
 
-    100%{
-        box-shadow: -4px -4px 10px #FF7A00, 4px 4px 10px #FF7A00, 1px 1px 4px rgba(0, 0, 0, 0.25); 
+    100% {
+        box-shadow: -4px -4px 10px #FF7A00, 4px 4px 10px #FF7A00, 1px 1px 4px rgba(0, 0, 0, 0.25);
     }
 }
 
 @media screen and (max-width: 450px) {
-    nav{
-        height: 200px;
-    }    
+    header {
+        width: 100%; 
+    }
+
+    .btn-mobilie img{
+        width: 3rem;
+        margin: 1rem;
+        margin-top: 2.5rem;
+    }
+
+
+    nav {
+        height: 70px;
+    }
+
     .logo img {
-        width: 10rem;
+        width: 5rem;
     }
-    
+
+    .logo {
+        left: 5px;
+    }
+
     .menu {
-            display: none;
+        display: none;
     }
-    
-.btn-mobilie{ 
-    visibility: visible;
+
+    .btn-mobilie {
+        visibility: visible;
+    }
+
+.item {
+    margin-top: 1.2rem;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.item:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 0 !important;
+}
+
+.item img {
+    width: 80%;
+    margin-top: -70px !important;
+}
+
+.item h1 {
+    font-size: 1.8rem;
+}
+
+.item h3 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin-top: 1rem;
+}
+
+
+.item button {
+    font-size: 2.1rem;
+    position: absolute;
+    top: 82%;
+    left: 10%;
+    transform: translate(-0%, -50%);
+}
+
+.item button:hover {
+    animation: hover 1020ms infinite;
+}
+
+.item button img {
+    position: relative;
+    top: 10px;
+    left: 5px;
+    width: 32px;
+}
+
+main{
+    width: 100% !important;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+
+
+section#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5rem 0rem;
+    gap: 2rem;
+}
+
+article {
+    width: 100% !important;
+    height: 300px;
+}
+
+#icon {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--corPrincipal);
+    font-size: 1.6rem;
+}
+
+#texto {
+    padding: 0rem !important;
+    font-size: 1.5rem;
 }
 }
